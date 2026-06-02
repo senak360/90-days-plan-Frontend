@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+
+            <label for="firstNameId">First Name</label>
+            <input type="text" name="firstName" id="firstNameId" /><br />
+
+            <label for="lastNameId">Last Name</label>
+            <input type="text" name="lastName" id="lastNameId" /><br />
+
+            <label for="uploadResumeId">Resume</label>
+            <input type="file" name="uploadResume" id="uploadResumeId" /><br />
+
+            <label>Select Courses</label>
+            <input type="checkbox" name="course1" id="course1" value="Java" />
+            <label for="course1">Java</label>
+            <input type="checkbox" name="course2" id="course2" value="Dotnet" />
+            <label for="course2">Dotnet</label>
+
+
+            <label for="passwordId">Password</label>
+            <input type="password" name="password" id="passwordId" /><br />
+
+            <label for="colorId">Select Color </label>
+            <input type="color" name="color" id="colorId" /><br />
+
+            <label for="dateofBirthId">Select DOB</label>
+            <input type="date" name="dateOfBirth" id="dateofBirthId" />
+
+            <label id="coursesId">Select Course</label>
+            <select name="courses" id="coursesId">
+                <optgroup>
+                    <option value="java">Java</option>
+                    <option value="dotnet">Dotnet</option>
+                    <option value="python">Python</option>
+                    <option valule="dfs">DFS</option>
+
+                </optgroup>
+            </select>
+
+            <textarea cols="100" rows="20"></textarea>
+            <input type="submit" value="Submit" /><br />
+            <button>Submit</button>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

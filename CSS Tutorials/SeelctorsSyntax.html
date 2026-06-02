@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* This is SIngle line COmment  Selector*/
+        /*
+        This is Multi Line Comment Selector
+            selector {
+                property : value;
+                color : red;
+            }
+        */
+
+        ul,
+        ol {
+            list-style-type: none;
+        }
+
+        /* This is Single Line*/
+        /*
+         * This is multi line 
+         * This is multi line 2
+        */
+        p,
+        ol {
+            color: red;
+        }
+
+      p, li, ul,ol,div,h1 { /* Type Selector*/
+        color:brown;
+      }
+
+   
+     
+       .inputField{
+      
+        background-color: black;
+     }
+     #firstName{
+        background-color:blue;
+     } 
+
+       .inputField{
+        background-color: green;
+     }
+      .inputField{
+        background-color: yellow;
+     }
+
+     #lastName{
+        background-color: blueviolet;
+     }
+      #lastName{
+        background-color: pink;
+     }
+
+
+     button:hover{
+        cursor:pointer;
+     }
+
+     div p {
+        color:blue;
+     }
+
+     div + p{
+        color:yellow;
+     }
+
+     div ~ p{
+        color:green;
+     }
+
+     input[placeholder="enter first Name"]{
+        background-color: rgb(156, 70, 70) !important;
+        color: black;
+     }
+
+     li:nth-child(even){
+        color:blue;
+     }
+      
+     input:not(#firstName){
+        background-color: black !important;
+        color:aliceblue;
+     }
+
+    </style>
+</head>
+
+<body>
+
+    <p>This is the Selectors and Syntax of the CSS</p>
+    <ol>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Dotnet</li>
+    </ol>
+    <ul>
+        <li>Java UNORDERD</li>
+        <li>Python</li>
+        <li>Dotnet</li>
+    </ul>
+    <h1>This is Header 1</h1>
+    <label for="firstName"></label>
+    <input type="text"  placeholder="enter first Name" class="inputField" id="firstName" />
+      <label for="firstName"></label>
+    <input type="text" placeholder="enter Last Name" class="inputField" id="lastName" />
+    <label for="range"></label>
+    <input type="range" min="10" max="200" value="40" id="range" />
+   <div>
+        <p>This is Paragraph insdie divdsion</p>
+    </div>
+    <div>
+        <p>This is Paragraph insdie divdsion2</p>
+        <p>This is Paragraph insdie divdsion3</p>
+    </div>
+    <p>This is Paragraph Outside And End of the File</p>
+     <p>This is Paragraph Outside And End of the File</p>
+    <button>Submit</button>
+</body>
+
+</html>

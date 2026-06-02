@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        p::after {
+            content: "This is image redered using pseudo element";
+            display: block;
+            color: red;
+
+        }
+
+        input::placeholder{
+            color:blue;
+        }
+
+        p::selection{
+            background-color: brown;
+        }
+
+       
+      
+        p::backdrop{
+            background-color: red;
+            color:white;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+
+    <p>
+        pseudo-element Desciption
+        ::after Insert content after the content of an element
+        ::before Insert content before the content of an element
+        ::first-letter Selects the first letter of each element
+        ::first-line Selects the first line of each element
+        ::selection Matches the portion of an element that is selected by a user
+        ::backdrop Used to create a backdrop that hides the underlying document for an element
+        ::placeholder Allows you to style the placeholder text of a form element (Experimental)
+        ::marker For applying list-style attributes on a given element (Experimental)
+        ::spelling-error Represents a text segment which the browser has flagged as incorrectly spelled
+
+    </p>
+    <input type="text" placeholder="Enter First Name" />
+</body>
+
+</html>

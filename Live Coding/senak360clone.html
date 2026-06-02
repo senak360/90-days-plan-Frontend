@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Senak Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        .header-name {
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+
+        .header-name-2 {
+            color: rgb(10, 208, 10);
+        }
+
+        #navbarText>ul>li {
+            margin-right: 2rem;
+        }
+
+        .btn-header-community {
+            background-color: rgb(10, 208, 10);
+            border-radius: 25px;
+            color: black;
+            padding: 0.9rem;
+            font-weight: bolder;
+            border: none;
+        }
+
+        .btn-header-community:hover {
+            animation: scal 100ms normal;
+
+        }
+
+        @keyframes scal {
+            0% {
+                transform: scale(1.01);
+            }
+
+            10% {
+                transform: scale(1.02);
+            }
+
+            20% {
+                transform: scale(1.03);
+            }
+
+            30% {
+                transform: scale(1.04);
+            }
+
+            40% {
+                transform: scale(1.05);
+            }
+
+            50% {
+                transform: scale(1.06);
+            }
+
+            60% {
+                transform: scale(1.07);
+            }
+
+            70% {
+                transform: scale(1.08);
+            }
+
+            80% {
+                transform: scale(1.09);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .home-hero-text-banner {
+            border-radius: 20px;
+            background-color: rgba(10, 208, 10, 0.215);
+            color: rgb(10, 208, 10);
+            border: 1px solid rgb(10, 208, 10);
+            padding: 0.5rem;
+        }
+
+        main {
+            background-color: rgb(30, 36, 53);
+        }
+
+        .banner-hero-text-1 {
+            color: white;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .banner-hero-text-2 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: rgb(10, 208, 10);
+        }
+
+        .banner-hero-text {
+            color: rgba(187, 182, 182, 0.988);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .live-class-header {
+            text-transform: capitalize;
+            color: rgb(10, 208, 10);
+        }
+
+        .live-container {
+            background-color: rgb(25, 32, 50);
+            border: 1px solid rgb(48, 43, 43);
+            padding: 1rem;
+            border-radius: 30px;
+        }
+
+        .live-sub-container {
+            border: 1ps solid rgb(119, 116, 116);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 20px;
+            background-color: rgba(78, 90, 78, 0.086);
+            color: rgb(10, 208, 10);
+            border: 1px solid rgb(10, 208, 10);
+        }
+
+        .logo-container {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            padding: 4rem;
+            animation: animateLogo 3s backwards 500ms infinite;
+        }
+
+        @keyframes animateLogo {
+            0% {
+                margin-top: 0rem;
+                box-shadow: rgba(10, 208, 10, 0.213) 0px 54px 55px, rgba(10, 208, 10, 0.316) 0px -12px 30px, rgba(10, 208, 10, 0.278) 0px 4px 6px, rgba(10, 208, 10, 0.373) 0px 12px 13px, rgba(10, 208, 10, 0.563) 0px -3px 5px;
+            }
+
+            50% {
+                margin-top: -1rem;
+            }
+
+            100% {
+                margin-top: 0rem;
+                box-shadow: rgba(10, 208, 10, 0.213) 0px 54px 55px, rgba(10, 208, 10, 0.316) 0px -12px 30px, rgba(10, 208, 10, 0.278) 0px 4px 6px, rgba(10, 208, 10, 0.373) 0px 12px 13px, rgba(10, 208, 10, 0.563) 0px -3px 5px;
+            }
+        }
+        .flex-item{
+              width: 350px;
+              border-radius: 1rem;
+              border: 1px solid gray;
+               padding: 2rem;
+              
+             
+        }
+        .flex-item:hover{
+              border: 1px solid rgb(10, 208, 10);
+             
+        }
+        .flex-box{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap:1rem;
+            margin: 2rem;
+            margin-left: 8rem;
+            margin-right: 0rem;
+            width: 90vw;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="favicon.ico" width="30px" height="30px" />
+                </a>
+                <div class="row" style="color:white;margin-left: 1rem;">
+                    <div class="header-name row">
+                        <div class="col"> <span class="header-name-1">SENAK </span> <span
+                                class="header-name-2">360</span></div>
+                    </div>
+                    <div class="row">TELGU . TECH . BHARAT</div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mentorship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bharat &Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <button class="btn-header-community">Join Community</button>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="row py-4">
+                <div class="col-7 px-4">
+                    <div class="row">
+                        <div class="col-6 px-4">
+                            <p class="home-hero-text-banner">Live • Telugu • Mon–Fri + Weekend Webinars</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 px-4 py-0 ">
+                            <span class="banner-hero-text-1">Industry-ready engineers,</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 px-4">
+                            <span class="banner-hero-text-2"> crafted in Telugu.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 px-4 banner-hero-text">
+                            Senak 360 is live, no-fluff mentorship for undergraduates, freshers, career-gap aspirants
+                            and NON-IT to IT switchers — taught the way real teams build software, not the textbook way.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row py-4 px-4 ml-2">
+                        <div class="live-container">
+                            <h4 class="live-class-header"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-radio h-3.5 w-3.5 animate-pulse" aria-hidden="true">
+                                    <path d="M16.247 7.761a6 6 0 0 1 0 8.478"></path>
+                                    <path d="M19.075 4.933a10 10 0 0 1 0 14.134"></path>
+                                    <path d="M4.925 19.067a10 10 0 0 1 0-14.134"></path>
+                                    <path d="M7.753 16.239a6 6 0 0 1 0-8.478"></path>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>&nbsp; Live Classes</h4>
+                            <div class="live-sub-container">
+                                <p style="color:rgb(10, 208, 10);">NEXT SESSION</p>
+                                <p style="color:white">May 31st Live - Web App Development</p>
+                                <p style="color:rgba(209, 205, 205, 0.819)">5/31/2026, 6:30:00PM</p>
+                                <p style="color:rgb(10, 208, 10);">Join link →</p>
+                            </div>
+                            <div>
+                                <p style="color:rgba(209, 205, 205, 0.819)">Previous classes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-6 ml-4" style="border-radius: 30px;">
+                        <div class="col" style="display: flex;align-items: center; justify-content: center;">
+                            <div class="logo-container" style="border-radius: 30px;">
+                                <img src="Logo - Senak 3602.png" width="400px" height="400px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 style="text-transform: capitalize;color: rgb(10, 208, 10);text-align: center;">Who this is for</h2>
+            <h1 style="color:white;text-align: center;">Built for every stage of your tech journey</h1>
+            <div class="flex-box">
+                   <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+               
+                <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+                 <div class="flex-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-code-xml h-7 w-7 text-primary" aria-hidden="true">
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                    </svg>
+                    <h3 style="color:white; font-weight: bold;">.NET Full Stack</h3>
+                    <p style="color:rgb(195, 188, 188)">C#, ASP.NET Core, EF Core, Angular/React, SQL.</p>
+                </div>
+
+
+            </div>
+
+            </div>
+        </main>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

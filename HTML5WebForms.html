@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="firstNameId">First Name</label>
+        <input type="text" autocomplete="on" required nane="firstName" id="firstNameId" placeholder="Enter Some Name" />
+        <input type="number" min="18" max="90" required placeholder="enter age" />
+        <input type="tel" pattern="[0-9]{7}" required placeholder="enter phone number" />
+        <input type="date"  placeholder="enter select date" />
+        <input type="datetime-local" placeholder="select Datw time " />
+        <select >
+            <optgroup>
+                <option value="java">Java Full Stack</option>
+                <option value="dotnet">Dotnet Full Stack</option>
+                <option value="python">Python Full Stack</option>
+                <option value="Ap">Andhra Pradesh</option>
+            </optgroup>
+        </select>
+
+        <p contenteditable="true">This is Para</p>
+        <input list="courses" placeholder="select courses" />
+        <datalist id="courses">
+            <option value="Java Full Stack">Java Full Stack</option>
+            <option value="Dotnet Full Stack">Dotnet Full Stack</option>
+            <option value="Python Full Stack">Python Full Stack</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+        </datalist>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
